@@ -14,13 +14,17 @@ spring:
       username: root
       password: user
   jpa:
-    hibernate:
-      ddl-auto: none
     show-sql: true
+    hibernate:
+      ddl-auto: update
     properties:
       hibernate:
         format_sql: true
+  #    database-platform: org.hibernate.dialect.MySQL8Dialect
   data:
     redis:
       host: localhost
       port: 6380
+vue:
+  url: http://localhost:3000
+
